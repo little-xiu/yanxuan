@@ -237,7 +237,6 @@ html,body {
 	float: left;
 	margin: 0 24px;
 	list-style: none;
-	position: relative;
 }
 .nav-item > a {
 	display: inline-block;
@@ -252,6 +251,9 @@ html,body {
 .nav-wrap a {
 	font-size: 14px;
 	font-weight: bold;
+}
+.nav-for {
+	position: relative;
 }
 .nav-line {
 	position: absolute;
