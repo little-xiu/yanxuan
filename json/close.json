@@ -1,0 +1,25 @@
+[
+  {
+    "img": "imgs/clothes1.png",
+    "title": "  女式修身喇叭裤",
+    "price": "¥99",
+    "limit": "今日特价"
+  },
+  {
+    "img": "imgs/clothes2.png",
+    "title": "  Paris名媛睡袍",
+    "price": "¥199"
+  },
+  {
+    "img": "imgs/clothes3.png",
+    "title": " 男式色拉姆保暖内衣套装",
+    "price": "¥199",
+    "new": "新品"
+  },
+  {
+    "img": "imgs/clothes4.png",
+    "title": "  女式紧身运动长裤",
+    "price": "¥99",
+    "hot": "爆品"
+  }
+]

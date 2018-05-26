@@ -1,0 +1,74 @@
+[
+ {
+  "img": "imgs/new1.png",
+  "title": " 男士清凉透气超轻休闲鞋",
+  "price": "¥299",
+  "hoverImg": "imgs/new11.jpg"
+ },
+ {
+  "img": "imgs/new2.png",
+  "title": " 女式尖头细带方根鞋",
+  "price": "¥299",
+  "hoverImg": "imgs/new22.jpg"
+ },
+ {
+  "img": "imgs/new3.png",
+  "title": " 马来西亚直采 椰子水 330毫升*12瓶",
+  "price": "¥98",
+  "hoverImg": "imgs/new33.jpg"
+ },
+ {
+  "img": "imgs/new4.jpg",
+  "title": " 冬夏两用 护脊椰棕弹簧床垫",
+  "price": "¥2099",
+  "hoverImg": "imgs/new44.jpg"
+ },
+ {
+  "img": "imgs/new5.png",
+  "title": " 冰激凌夏日女式墨镜",
+  "price": "¥229",
+  "hoverImg": "imgs/new55.jpg"
+ },
+ {
+  "img": "imgs/new6.png",
+  "title": " 女式尖头细带方根鞋",
+  "price": "¥299",
+  "hoverImg": "imgs/new66.png"
+ },
+ {
+  "img": "imgs/new7.png",
+  "title": " 马来西亚直采 椰子水 330毫升*12瓶",
+  "price": "¥98",
+  "hoverImg": "imgs/new77.png"
+ },
+ {
+  "img": "imgs/new8.png",
+  "title": " 冬夏两用 护脊椰棕弹簧床垫",
+  "price": "¥2099",
+  "hoverImg": "imgs/new88.png"
+ },
+  {
+  "img": "imgs/new2.png",
+  "title": " 女式尖头细带方根鞋",
+  "price": "¥299",
+  "hoverImg": "imgs/new22.jpg"
+ },
+ {
+  "img": "imgs/new3.png",
+  "title": " 马来西亚直采 椰子水 330毫升*12瓶",
+  "price": "¥98",
+  "hoverImg": "imgs/new33.jpg"
+ },
+ {
+  "img": "imgs/new4.jpg",
+  "title": " 冬夏两用 护脊椰棕弹簧床垫",
+  "price": "¥2099",
+  "hoverImg": "imgs/new44.jpg"
+ },
+ {
+  "img": "imgs/new5.png",
+  "title": " 冰激凌夏日女式墨镜",
+  "price": "¥229",
+  "hoverImg": "imgs/new55.jpg"
+ }
+]

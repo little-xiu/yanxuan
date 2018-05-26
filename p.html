@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box"></div>
+</body>
+</html>
+<script type="text/javascript">
+  function CountD() {
+    this.box = document.getElementById('box');
+    this.init();
+  }
+  CountD.prototype.init = function() {
+    var _this = this;
+    var timer = setInterval(function(){
+      _this.date();
+    },1000);
+    var obj = this.date();
+    if(obj.d <= 0 && parseInt(obj.h) <= 0 && parseInt(obj.m) <= 0 && parseInt(obj.s) <= 0) {
+      clearInterval(timer);
+    }
+  }
+  CountD.prototype.insertZ = function(n) {
+    return n >= 10 ? n : '0' + n;
+  }
+  CountD.prototype.count = function(s) {
+    let obj = {};
+    obj.d = Math.floor(s/(60*60*24));
+    obj.h = this.insertZ(Math.floor(s%(60*60*24)/(60*60)));
+    obj.m = this.insertZ(Math.floor(s%(60*60*24)%(60*60)/60));
+    obj.s = this.insertZ(Math.floor(s%(60*60*24)%(60*60)%60));
+    return obj;
+  }
+  CountD.prototype.date = function() {
+    let tNow = new Date().getTime();
+    let tFuture = new Date('2018-5-25 10:03:11').getTime();
+    let subS = (tFuture - tNow)/1000;//相差的秒数
+    let obj = this.count(subS);
+    this.box.innerHTML = obj.d + '天' + obj.h + '小时' + obj.m + '分' + obj.s + '秒';
+    return obj;
+  }
+  new CountD();
+  /*function insertZ(n) {
+    return n >= 10 ? n : '0'+ n;
+  }
+  function countD(s) {
+    let obj = {};
+    obj.d = Math.floor(s/(60*60*24));
+    obj.h = insertZ(Math.floor(s%(60*60*24)/(60*60)));
+    obj.m = insertZ(Math.floor(s%(60*60*24)%(60*60)/60));
+    obj.s = insertZ(Math.floor(s%(60*60*24)%(60*60)%60));
+    return obj;
+  }
+  function date() {
+    let tNow = new Date().getTime();
+    let tFuture = new Date('2018-6-20 11:11:11').getTime();
+    let subS = (tFuture - tNow)/1000;//相差的秒数
+    let obj = countD(subS);
+    document.body.innerHTML = obj.d + '天' + obj.h + '小时' + obj.m + '分' + obj.s + '秒';
+  }
+  setInterval(date,1000);*/
+
+</script>
