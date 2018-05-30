@@ -21,6 +21,9 @@ button, input {
   visibility: hidden;
   overflow: hidden;
 }
+i {
+  font-style: normal;
+}
 /*.clearfix:after {
     content:"";
     display: table;

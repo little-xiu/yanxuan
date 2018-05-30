@@ -775,7 +775,7 @@ function Fixed() {
 }
 Fixed.prototype.init = function() {
 	var _this = this;
-	window.onscroll = function() {
+	window.addEventListener('scroll',function() {
 		var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
 		_this.fixBox.style.top = _this.iTop + scrollT + 'px';
 		if(scrollT > 400) {
@@ -783,7 +783,7 @@ Fixed.prototype.init = function() {
 		} else {
 			_this.backTop.style.display = 'none';
 		}
-	}
+	});
 	this.click();
 }
 Fixed.prototype.click = function() {
@@ -792,3 +792,202 @@ Fixed.prototype.click = function() {
 	}
 }
 new Fixed();
+//全局函数 页面滚动始终垂直居中
+function verticalCenter(ele) {
+	var clientH = document.documentElement.clientHeight;
+	var iT = (clientH - ele.offsetHeight)/2;
+	ele.style.top = iT + 'px';
+	window.onscroll = function() {
+		var scrollH = document.documentElement.scrollTop || document.body.scrollTop;
+		ele.style.top = iT + scrollH + 'px';
+	}
+}
+//注册页面
+function Register() {
+	this.closeBtn = document.getElementById('reg-close-btn');
+	this.cover = document.getElementById('cover');
+	this.box = document.getElementById('register-box');
+	this.registerBtn = document.getElementById('register');
+	this.clearBtn = document.querySelectorAll('.clear-icon');
+	this.info = document.getElementById('register-info');
+	this.phoneNum = document.getElementById('register-num');
+	this.init();
+}
+Register.prototype.init = function() {
+	this.show();
+	this.close();
+	this.clear();
+	this.validatePhone();
+}
+//点击注册显示表单
+Register.prototype.show = function() {
+	var _this = this;
+	this.registerBtn.onclick = function() {
+		_this.cover.style.display = 'block';
+		_this.box.style.display = 'block';
+		//注册盒子的垂直居中
+		verticalCenter(_this.box);
+	}
+}
+
+//手机号格式验证
+Register.prototype.validatePhone = function() {
+	var regPhone = /^1[345678]\d{9}$/;
+	var _this = this;
+	this.phoneNum.onblur = function() {
+		if(this.value) {
+			if(!regPhone.test(this.value)) {
+				_this.info.style.display = 'block';
+				_this.info.innerText = '手机号格式错误';
+				this.className = 'red-border';
+			}
+		} else {
+			_this.info.style.display = 'none';
+			this.className = '';
+		}
+	}
+	this.phoneNum.onfocus = function() {
+		_this.info.style.display = 'none';
+		this.className = '';
+	}
+}
+	//清除输入框
+Register.prototype.clear = function() {
+	var _this = this;
+	for(var i = 0; i < this.clearBtn.length; i++) {
+		this.clearBtn[i].onclick = function() {
+			var ipt = this.previousElementSibling;
+			ipt.value = '';
+			_this.info.style.display = 'none';
+			ipt.className = '';
+		}
+	}
+}
+//关闭注册页面
+Register.prototype.close = function() {
+	var _this = this;
+	this.closeBtn.onclick = function() {
+		_this.cover.style.display = 'none';
+		_this.box.style.display = 'none';
+	}
+}
+new Register();
+
+//login
+function Login() {
+	this.box = document.getElementById('login-box');
+	this.loginBtn = document.getElementById('login');
+	this.cover = document.getElementById('cover');
+	this.closeBtn = document.getElementById('login-close-btn');
+	this.clearBtn = document.querySelectorAll('.clear-icon');
+	this.phoneNum = document.getElementById('login-num');
+	this.info = document.getElementById('login-info');
+	this.init();
+}
+Login.prototype.init = function() {
+	this.show();
+	this.close();
+	this.clear();
+	this.validatePhone();
+}
+Login.prototype.show = function() {
+	var _this = this;
+	this.loginBtn.onclick = function() {
+		_this.cover.style.display = 'block';
+		_this.box.style.display = 'block';
+		verticalCenter(_this.box);
+	}
+}
+Login.prototype.close = function() {
+	var _this = this;
+	this.closeBtn.onclick = function() {
+		_this.cover.style.display = 'none';
+		_this.box.style.display = 'none';
+	}
+}
+Login.prototype.clear = function() {
+	var _this = this;
+	for(var i = 0; i < this.clearBtn.length; i++) {
+		this.clearBtn[i].onclick = function() {
+			var ipt = this.previousElementSibling;
+			ipt.value = '';
+			_this.info.style.display = 'none';
+			ipt.className = '';
+		}
+	}
+}
+Login.prototype.validatePhone = function() {
+	var regPhone = /^1[345678]\d{9}$/;
+	var _this = this;
+	this.phoneNum.onblur = function() {
+		if(this.value) {
+			if(!regPhone.test(this.value)) {
+				_this.info.style.display = 'block';
+				_this.info.innerText = '手机号格式错误';
+				this.className = 'red-border';
+			}
+		} else {
+			_this.info.style.display = 'none';
+			this.className = '';
+		}
+	}
+	this.phoneNum.onfocus = function() {
+		_this.info.style.display = 'none';
+		this.className = '';
+	}
+}
+new Login();
+
+//页面滚动时固定导航的显示与隐藏
+function Fixednav() {
+	this.searchInner = document.querySelector('.search-inner');
+	this.header = document.getElementById('header');
+	this.searchBtn = document.getElementById('search-btn');
+	this.searchHide = document.getElementById('search-hide');
+	this.more = document.getElementById('search-more');
+	this.navHide = document.querySelectorAll('.nav-hide');
+	this.searchTap = document.getElementById('search-tap');
+	this.init();
+}
+Fixednav.prototype.init = function() {
+	this.toggle();
+	this.show();
+}
+Fixednav.prototype.show = function() {
+	var _this = this;
+	window.addEventListener('scroll',function() {
+		var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
+		if(scrollT > 200) {
+			_this.header.className = 'header fixednav';
+			_this.searchHide.style.display = 'none';
+		} else {
+
+			_this.header.className = 'header';
+			_this.searchHide.style.display = 'inline-block';
+		}
+	});
+}
+Fixednav.prototype.toggle = function() {
+	var _this = this;
+	this.searchBtn.onclick = function() {
+		if(_this.searchHide.style.display != 'inline-block') {
+			_this.searchTap.style.display = 'block';
+		}
+		if(_this.header.className == 'header fixednav') {			
+			_this.searchHide.style.display = 'inline-block';
+			for(var i = 0; i < _this.navHide.length; i++) {
+				_this.navHide[i].style.display = 'none';
+			}
+		}
+	}
+	this.more.onclick = function() {
+		_this.searchHide.style.display = 'none';
+		for(var i = 0; i < _this.navHide.length; i++) {
+			_this.navHide[i].style.display = 'block';
+		}
+	}
+	this.searchHide.onmouseout = function() {
+		_this.searchTap.style.display = 'none';
+	}
+}
+new Fixednav();

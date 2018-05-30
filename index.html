@@ -25,8 +25,8 @@
 			</div> <!-- carousel-notice -->
 		</div>
 		<div class="top-r">
-			<a class="top-cell">登录</a>
-			<a class="top-cell">注册</a>
+			<a class="top-cell" id="login">登录</a>
+			<a class="top-cell" id="register">注册</a>
 			<a class="top-cell">
 				<span class="top-line"></span>
 				我的订单
@@ -76,351 +76,376 @@
 			</div>
 		</div> <!-- top-r -->
 	</div> <!-- top -->
-	<div class="header">
-		<div class="search-wrap clearfix">
-			<a href="##" class="logo-link"></a>
+	<div class="header" id="header">
+		<div class="header-inner">
+			<div class="search-wrap clearfix">
+				<a href="##" class="logo-link">
+				</a>
+			</div> <!-- search-wrap -->
 			<div class="cart-box">
 				<a href="##" class="icon cart-link">
 					<span class="pro-num icon">0</span>
 				</a>
 			</div>
+			<a class="icon sm-logo"></a>
 			<div class="search-inner">
-				<input type="text" class="search-txt" id="search-txt">
-				<span id="place-text">清爽凉席99元起</span>
-				<input type="button" class="icon search-btn">
+				<div class="search-hide" id="search-hide">
+					<span class="search-more" id="search-more">&gt;&gt;</span>
+					<ul class="search-tap" id="search-tap">
+						<li class="search">大家都在搜</li>
+						<li><a href="##" class="red">6月热销特惠</a></li>
+						<li><a href="##" class="red">500券礼包</a></li>
+						<li><a href="##" class="red">夏凉装备满199减30</a></li>
+						<li><a href="##">牙刷</a></li>
+						<li><a href="##">T恤</a></li>
+					</ul>
+					<input type="text" class="search-txt" id="search-txt">
+					<span id="place-text">清爽凉席99元起</span>
+				</div>  <!-- search-hide -->
+				<input type="button" class="icon search-btn" id="search-btn">
 			</div>
-			
-		</div> <!-- search-wrap -->
-		<div class="nav-wrap clearfix" id="nav-list">
-			<li class="nav-item on">
-				<a href="##" class="nav-link">首页</a>
-			</li> <!-- nav-item -->
-			<li class="nav-item navtap">
-				<a href="##" class="nav-link">居家</a>
-				<div class="nav-drop">
-					<div class="w1087">
-						<ul class="nav-drop-list clearfix">
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/jujia.png">
-									<p>床品件套</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/jujia.png">
-									<p>床品件套</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/jujia.png">
-									<p>床品件套</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/jujia.png">
-									<p>床品件套</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/jujia.png">
-									<p>床品件套</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/jujia.png">
-									<p>床品件套</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/jujia.png">
-									<p>床品件套</p>
-								</a>
-							</li>
-						</ul>
-					</div> <!-- w1087 -->
-				</div> <!-- nav-drop -->
-			</li> <!-- nav-item -->
-			<li class="nav-item navtap">
-				<a href="##" class="nav-link">配件</a>
-				<div class="nav-drop">
-					<div class="w1087">
-						<ul class="nav-drop-list clearfix">
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/peijian.png">
-									<p>男士包袋</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/peijian.png">
-									<p>男士包袋</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/peijian.png">
-									<p>男士包袋</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/peijian.png">
-									<p>男士包袋</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/peijian.png">
-									<p>男士包袋</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/peijian.png">
-									<p>男士包袋</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/peijian.png">
-									<p>男士包袋</p>
-								</a>
-							</li>
-						</ul>
-					</div> <!-- w1087 -->
-				</div> <!-- nav-drop -->
-			</li> <!-- nav-item --> 
-			<li class="nav-item navtap">
-				<a href="##" class="nav-link">服装</a>
-				<div class="nav-drop">
-					<div class="w1087">
-						<ul class="nav-drop-list clearfix">
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/fuzhuang.png">
-									<p>衬衫</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/fuzhuang.png">
-									<p>衬衫</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/fuzhuang.png">
-									<p>衬衫</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/fuzhuang.png">
-									<p>衬衫</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/fuzhuang.png">
-									<p>衬衫</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/fuzhuang.png">
-									<p>衬衫</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/fuzhuang.png">
-									<p>衬衫</p>
-								</a>
-							</li>
-						</ul>
-					</div> <!-- w1087 -->
-				</div> <!-- nav-drop -->
-			</li> <!-- nav-item --> 
-			<li class="nav-item navtap">
-				<a href="##" class="nav-link">电器</a>
-				<div class="nav-drop">
-					<div class="w1087">
-						<ul class="nav-drop-list clearfix">
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/dianqi.png">
-									<p>厨房电器</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/dianqi.png">
-									<p>厨房电器</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/dianqi.png">
-									<p>厨房电器</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/dianqi.png">
-									<p>厨房电器</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/dianqi.png">
-									<p>厨房电器</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/dianqi.png">
-									<p>厨房电器</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/dianqi.png">
-									<p>厨房电器</p>
-								</a>
-							</li>
-						</ul>
-					</div> <!-- w1087 -->
-				</div> <!-- nav-drop -->
-			</li> <!-- nav-item --> 
-			<li class="nav-item navtap">
-				<a href="##" class="nav-link">洗护</a>
-				<div class="nav-drop">
-					<div class="w1087">
-						<ul class="nav-drop-list clearfix">
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/xihu.png">
-									<p>湿品纸巾</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/xihu.png">
-									<p>湿品纸巾</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/xihu.png">
-									<p>湿品纸巾</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/xihu.png">
-									<p>湿品纸巾</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/xihu.png">
-									<p>湿品纸巾</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/xihu.png">
-									<p>湿品纸巾</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/xihu.png">
-									<p>湿品纸巾</p>
-								</a>
-							</li>
-						</ul>
-					</div> <!-- w1087 -->
-				</div> <!-- nav-drop -->
-			</li> <!-- nav-item --> 
-			<li class="nav-item navtap">
-				<a href="##" class="nav-link">饮食</a>
-				<div class="nav-drop">
-					<div class="w1087">
-						<ul class="nav-drop-list clearfix">
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/food.png">
-									<p>糕点</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/food.png">
-									<p>糕点</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/food.png">
-									<p>糕点</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/food.png">
-									<p>糕点</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/food.png">
-									<p>糕点</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/food.png">
-									<p>糕点</p>
-								</a>
-							</li>
-							<li class="nav-drop-item">
-								<a href="##">
-									<img src="imgs/food.png">
-									<p>糕点</p>
-								</a>
-							</li>
-						</ul>
-					</div> <!-- w1087 -->
-				</div> <!-- nav-drop -->
-			</li> <!-- nav-item --> 
-			<li class="nav-item">
-				<a href="##" class="nav-link">餐厨</a>
-			</li> <!-- nav-item -->
-			<li class="nav-item">
-				<a href="##" class="nav-link">婴童</a>
-			</li> <!-- nav-item -->
-			<li class="nav-item">
-				<a href="##" class="nav-link">文体</a>
-			</li> <!-- nav-item -->
-			<li class="nav-item">
-				<a href="##" class="nav-link">特色区</a>
-			</li> <!-- nav-item -->
-			<li class="nav-item nav-for">
-				<span class="nav-line"></span>
-				<a href="##" class="nav-link">为你严选</a>
-			</li> <!-- nav-item -->
-			<li class="nav-item">
-				<a href="##" class="nav-link">众筹</a>
-			</li> <!-- nav-item -->
-		</div> <!-- nav-wrap -->
+			<div class="login-icon-box icon">
+				<ul class="login-tap">
+					<i class="icon triangle"></i>
+					<li class="item1">
+						<a href="##">登陆</a>
+					</li>
+					<li>
+						<a href="##">注册</a>
+					</li>
+				</ul>
+			</div>	<!-- login-icon-box -->		 
+			<ul class="nav-wrap clearfix" id="nav-list">
+				<li class="nav-item on">
+					<a href="##" class="nav-link">首页</a>
+				</li> <!-- nav-item -->
+				<li class="nav-item navtap">
+					<a href="##" class="nav-link">居家</a>
+					<div class="nav-drop">
+						<div class="w1087">
+							<ul class="nav-drop-list clearfix">
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/jujia.png">
+										<p>床品件套</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/jujia.png">
+										<p>床品件套</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/jujia.png">
+										<p>床品件套</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/jujia.png">
+										<p>床品件套</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/jujia.png">
+										<p>床品件套</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/jujia.png">
+										<p>床品件套</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/jujia.png">
+										<p>床品件套</p>
+									</a>
+								</li>
+							</ul>
+						</div> <!-- w1087 -->
+					</div> <!-- nav-drop -->
+				</li> <!-- nav-item -->
+				<li class="nav-item navtap">
+					<a href="##" class="nav-link">配件</a>
+					<div class="nav-drop">
+						<div class="w1087">
+							<ul class="nav-drop-list clearfix">
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/peijian.png">
+										<p>男士包袋</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/peijian.png">
+										<p>男士包袋</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/peijian.png">
+										<p>男士包袋</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/peijian.png">
+										<p>男士包袋</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/peijian.png">
+										<p>男士包袋</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/peijian.png">
+										<p>男士包袋</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/peijian.png">
+										<p>男士包袋</p>
+									</a>
+								</li>
+							</ul>
+						</div> <!-- w1087 -->
+					</div> <!-- nav-drop -->
+				</li> <!-- nav-item --> 
+				<li class="nav-item navtap">
+					<a href="##" class="nav-link">服装</a>
+					<div class="nav-drop">
+						<div class="w1087">
+							<ul class="nav-drop-list clearfix">
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/fuzhuang.png">
+										<p>衬衫</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/fuzhuang.png">
+										<p>衬衫</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/fuzhuang.png">
+										<p>衬衫</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/fuzhuang.png">
+										<p>衬衫</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/fuzhuang.png">
+										<p>衬衫</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/fuzhuang.png">
+										<p>衬衫</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/fuzhuang.png">
+										<p>衬衫</p>
+									</a>
+								</li>
+							</ul>
+						</div> <!-- w1087 -->
+					</div> <!-- nav-drop -->
+				</li> <!-- nav-item --> 
+				<li class="nav-item navtap">
+					<a href="##" class="nav-link">电器</a>
+					<div class="nav-drop">
+						<div class="w1087">
+							<ul class="nav-drop-list clearfix">
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/dianqi.png">
+										<p>厨房电器</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/dianqi.png">
+										<p>厨房电器</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/dianqi.png">
+										<p>厨房电器</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/dianqi.png">
+										<p>厨房电器</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/dianqi.png">
+										<p>厨房电器</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/dianqi.png">
+										<p>厨房电器</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/dianqi.png">
+										<p>厨房电器</p>
+									</a>
+								</li>
+							</ul>
+						</div> <!-- w1087 -->
+					</div> <!-- nav-drop -->
+				</li> <!-- nav-item --> 
+				<li class="nav-item navtap">
+					<a href="##" class="nav-link">洗护</a>
+					<div class="nav-drop">
+						<div class="w1087">
+							<ul class="nav-drop-list clearfix">
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/xihu.png">
+										<p>湿品纸巾</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/xihu.png">
+										<p>湿品纸巾</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/xihu.png">
+										<p>湿品纸巾</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/xihu.png">
+										<p>湿品纸巾</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/xihu.png">
+										<p>湿品纸巾</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/xihu.png">
+										<p>湿品纸巾</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/xihu.png">
+										<p>湿品纸巾</p>
+									</a>
+								</li>
+							</ul>
+						</div> <!-- w1087 -->
+					</div> <!-- nav-drop -->
+				</li> <!-- nav-item --> 
+				<li class="nav-item navtap">
+					<a href="##" class="nav-link">饮食</a>
+					<div class="nav-drop">
+						<div class="w1087">
+							<ul class="nav-drop-list clearfix">
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/food.png">
+										<p>糕点</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/food.png">
+										<p>糕点</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/food.png">
+										<p>糕点</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/food.png">
+										<p>糕点</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/food.png">
+										<p>糕点</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/food.png">
+										<p>糕点</p>
+									</a>
+								</li>
+								<li class="nav-drop-item">
+									<a href="##">
+										<img src="imgs/food.png">
+										<p>糕点</p>
+									</a>
+								</li>
+							</ul>
+						</div> <!-- w1087 -->
+					</div> <!-- nav-drop -->
+				</li> <!-- nav-item --> 
+				<li class="nav-item nav-hide">
+					<a href="##" class="nav-link">餐厨</a>
+				</li> <!-- nav-item -->
+				<li class="nav-item nav-hide">
+					<a href="##" class="nav-link">婴童</a>
+				</li> <!-- nav-item -->
+				<li class="nav-item nav-hide">
+					<a href="##" class="nav-link">文体</a>
+				</li> <!-- nav-item -->
+				<li class="nav-item nav-hide">
+					<a href="##" class="nav-link">特色区</a>
+				</li> <!-- nav-item -->
+				<li class="nav-item nav-for">
+					<span class="nav-line"></span>
+					<a href="##" class="nav-link">为你严选</a>
+				</li> <!-- nav-item -->
+				<li class="nav-item nav-much">
+					<a href="##" class="nav-link">众筹</a>
+				</li> <!-- nav-item -->
+			</ul> <!-- nav-wrap -->
+		</div>  <!-- header-inner -->
 	</div> <!-- header -->
 	<div class="banner-box" id="banner-box">
 		<ul class="banner" id="banner">
@@ -837,16 +862,25 @@
 			<p>下载APP</p>
 			<span class="fix-line"></span>
 			<div class="app-tap">
-				<p class="apptap-top clearfix">
-					<p class="app-cash-r">
-						<span class="flag">￥</span>
-						<span class="num">1000</span>
-					</p>
+				<div class="apptap-top clearfix">
 					<p class="app-cash-l">
+						<span class="flag">￥</span><span class="num">1000</span>
+					</p>
+					<p class="app-cash-r">
 						<span class="new">新人</span>
 						<span class="gift">现金礼</span>
 					</p>
-				</p>
+				</div>
+				<div class="app-bottom clearfix">
+					<div class="app-ercode">
+						<span></span>
+					</div>
+					<div class="app-b-txt">
+						<h5>立即扫码</h5>
+						<p>下载APP领取</p>
+					</div>
+				</div>
+				<span class="app-trangle s2"></span>
 			</div> <!-- app-tap -->
 		</div>
 		<a href="##" class="fixed-item fixed-item3">
@@ -859,6 +893,122 @@
 			<p>回顶部</p>
 		</a>
 	</div> <!-- fixed-tool -->
+	<div class="cover" id="cover"></div>
+	<div class="register-box" id="register-box">
+		<span class="close-btn" id="reg-close-btn"></span>
+		<div class="register-top clearfix">
+			<span>手机号注册</span>
+			<a href="##">直接登录</a>
+			<a href="##" class="email-register">邮箱注册</a>
+		</div>
+		<form>
+			<div class="form-group">
+				<i class="phone"></i>
+				<span class="line"></span>
+				<input type="text" name="" id="register-num" placeholder="请输入手机号">
+				<span class="clear-icon sprit3"></span>
+			</div>
+			<div class="form-group form-group2">
+				<input type="text" name="" id="validate-code" placeholder="请输入短信验证码" maxlength="6">
+				<span class="clear-icon sprit3"></span>
+				<span class="get-validate">获取验证码</span>
+			</div>
+			<div class="form-group form-group3">
+				<i class="lock sprit3"></i>
+				<span class="line"></span>
+				<input type="password" name="" id="password" placeholder="请输入密码">
+				<span class="clear-icon sprit3"></span>
+			</div>
+			<p class="register-info" id="register-info">
+				<i class="sprit3"></i>
+				手机号格式错误
+			</p>
+			<input type="submit" name="" value="注 册" class="register-btn" id="register-btn">
+			<p class="register-agree">
+				我同意《<a href="##">服务条款</a>》和《<a href="##">网易隐私政策</a>》
+			</p>
+		</form>
+	</div> <!-- register-box -->
+	<div class="login-box" id="login-box">
+		<span class="close-btn" id="login-close-btn"></span>
+		<div class="login-main">
+			<p class="login-top clearfix">
+				<span class="line"></span>
+				<a href="##" class="phone-num">手机号登陆</a>
+				<a href="##" class="email">邮箱登陆</a>
+			</p>
+			<p class="code-valid-login">
+				<a href="##">使用密码验证登陆</a>
+			</p>
+			<div class="form-group">
+				<i class="phone"></i>
+				<span class="line"></span>
+				<input type="text" name="" id="login-num" placeholder="请输入手机号">
+				<span class="clear-icon sprit3"></span>
+			</div>
+			<div class="form-group form-group2">
+				<input type="text" name="" id="validate-login" placeholder="请输入短信验证码" maxlength="6">
+				<span class="clear-icon sprit3"></span>
+				<span class="get-validate">获取验证码</span>
+			</div>
+			<p class="register-info" id="login-info">
+				<i class="sprit3"></i>
+				手机号格式错误
+			</p>
+			<input type="submit" name="" value="登 陆" class="register-btn" id="login-btn">
+		</div> <!--  login-main -->
+		<div class="login-foot">
+			<p class="login-foot-l">
+				<a href="##" class="weixin"></a>
+				<a href="##" class="qq"></a>
+				<a href="##" class="sina"></a>
+				<a href="##" class="wangyi"></a>
+			</p>
+			<p class="login-foot-r">
+				<a href="##" class="question">遇到问题？</a>
+				<a href="##">手机快捷注册</a>
+			</p>
+		</div>
+	</div> <!-- login-box -->
+	<div class="footer">
+		<div class="footer-inner">
+			<ul class="footer-top clearfix">
+				<li class="foot-item">
+					<i class="ft-icon ft-icon1"></i>
+					<span>30天无忧退换货</span>
+				</li>
+				<li class="foot-item">
+					<i class="ft-icon ft-icon2"></i>
+					<span>满88元免邮费</span>
+				</li>
+				<li class="foot-item">
+					<i class="ft-icon ft-icon3"></i>
+					<span>网易品质保证</span>
+				</li>
+			</ul>
+		</div> <!-- footer-top -->
+		<div class="footer-bot">
+			<div class="foot-links">
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>|
+				<a href="##">关于我们</a>
+				<a href="##" class="admini">
+					<img src="imgs/copy1.gif">
+				</a>
+			</div>
+			<p class="ft-copy">
+				网易公司版权所有 &copy; 1997-2018   食品经营许可证：JY13301080111719
+				出版物经营许可证：新出发滨字第0132号
+			</p>
+		</div>
+	</div> <!-- footer -->
 </body>
 </html>
 <script type="text/javascript" src="home.js"></script>
