@@ -1,0 +1,381 @@
+{
+	"clothes": [
+	  {
+	    "id": 1,
+	    "img": "imgs/clothes1.png",
+	    "title": "  女式修身喇叭裤",
+	    "price": "¥99",
+	    "limit": "今日特价"
+	  },
+	  {
+	    "id": 2,
+	    "img": "imgs/clothes2.png",
+	    "title": "  Paris名媛睡袍",
+	    "price": "¥199"
+	  },
+	  {
+	    "id": 3,
+	    "img": "imgs/clothes3.png",
+	    "title": " 男式色拉姆保暖内衣套装",
+	    "price": "¥199",
+	    "new": "新品"
+	  },
+	  {
+	    "id": 4,
+	    "img": "imgs/clothes4.png",
+	    "title": "  女式紧身运动长裤",
+	    "price": "¥99",
+	    "hot": "爆品"
+	  }
+	],
+	"comments": [
+	 {
+	  "id": 5,
+	  "img": "imgs/say1.jpg",
+	  "user": "c****6",
+	  "time": "2018-04-28 17:15",
+	  "title": "明前精品西湖龙井礼盒 100克",
+	  "price": "¥660",
+	  "des": "茶泡出来很香，茶叶都是嫩芽，口感很好"
+	 },
+	 {
+	  "id": 6,
+	  "img": "imgs/say2.jpg",
+	  "user": "老****",
+	  "time": "2018-04-15 22:41",
+	  "title": "女式蝴蝶结衬衫",
+	  "price": "¥299",
+	  "des": "布料有点硬并且厚，不透气。穿着好看"
+	 },
+	 {
+	  "id": 7,
+	  "img": "imgs/say3.jpg",
+	  "user": "木****木",
+	  "time": "2018-03-28 00:53",
+	  "title": "简约拼色大檐编织帽",
+	  "price": "¥119",
+	  "des": "一如既往"
+	 },
+	 {
+	  "id": 8,
+	  "img": "imgs/say4.jpg",
+	  "user": "S****w",
+	  "time": "2018-05-21 11:54",
+	  "title": "马来西亚直采 椰子水 330毫升*12瓶",
+	  "price": "¥98",
+	  "des": "味道不错！买了两箱，会继续回购"
+	 },
+	 {
+	  "id": 9,
+	  "img": "imgs/say5.jpg",
+	  "user": "1****4",
+	  "time": "2018-05-14 11:19",
+	  "title": "春风TryFun系列小辣椒飞机杯",
+	  "price": "¥99",
+	  "des": "不错，很好用。"
+	 },
+	 {
+	  "id": 10,
+	  "img": "imgs/say6.jpg",
+	  "user": "范****",
+	  "time": "2018-05-09 21:23",
+	  "title": "寿喜汁（复合调味料） 190毫升",
+	  "price": "¥15",
+	  "des": "明天试这个，看起来很不错"
+	 },
+	 {
+	  "id": 11,
+	  "img": "imgs/say7.jpg",
+	  "user": "范****",
+	  "time": "2018-05-09 21:22",
+	  "title": "手摇咖啡磨豆机",
+	  "price": "¥189",
+	  "des": "特别好用，买了这个马上去买手冲壶，又中毒了"
+	 },
+	 {
+	  "id": 12,
+	  "img": "imgs/say8.jpg",
+	  "user": "六****e",
+	  "time": "2018-05-09 10:03",
+	  "title": "简约陶瓷马克杯",
+	  "price": "¥39",
+	  "des": "这个杯子很喜欢"
+	 },
+	 {
+	  "id": 13,
+	  "img": "imgs/say9.jpg",
+	  "user": "灰****杨",
+	  "time": "2018-05-08 10:33",
+	  "title": "一体式哺乳文胸",
+	  "price": "¥129",
+	  "des": "质量好，紧致，但是尺码偏小，平时穿85这款得买90的，按照尺码细致量一下，内衣产品不能退换，一定选好尺码"
+	 },
+	 {
+	  "id": 14,
+	  "img": "imgs/say10.jpg",
+	  "user": "C****莹",
+	  "time": "2018-05-04 17:12",
+	  "title": "女式一字肩裁片牛仔裙",
+	  "price": "¥249",
+	  "des": "显瘦显瘦显瘦，重要的事情说三遍"
+	 },
+	 {
+	  "id": 15,
+	  "img": "imgs/say11.jpg",
+	  "user": "a****i",
+	  "time": "2018-04-29 23:04",
+	  "title": "法式乳酪 300克",
+	  "price": "¥38",
+	  "des": "还没吃，吃过后来追评。"
+	 },
+	 {
+	  "id": 16,
+	  "img": "imgs/say12.jpg",
+	  "user": "燕****",
+	  "time": "2018-04-29 08:09",
+	  "title": "德钟壶 紫砂玉白茶具套装",
+	  "price": "¥799",
+	  "des": "精致 包装到位 货物无损"
+	 }
+	],
+	"limit": [
+  {
+    "id": 17,
+  "img": "imgs/xianshi1.png",
+  "title": "旋转可折叠收纳篮",
+  "sub_tit": "瞬间伸缩，超强收纳",
+  "num": "还剩387件",
+  "limitP": "64.5",
+  "price": "¥86"
+	 },
+	 {
+	  "id": 18,
+	  "img": "imgs/xianshi2.png",
+	  "title": "叠加餐椅",
+	  "sub_tit": "随心叠放 方便存储",
+	  "num": "还剩150件",
+	  "limitP": "879.2",
+	  "price": "¥1099"
+	 },
+	 {
+	  "id": 19,
+	  "img": "imgs/xianshi3.png",
+	  "title": "竹柄鸵鸟毛尘掸",
+	  "sub_tit": "轻轻一掸，除尘不留痕",
+	  "num": "还剩393件",
+	  "limitP": "31.41",
+	  "price": "¥34.9"
+	 },
+	 {
+	  "id": 20,
+	  "img": "imgs/xianshi4.png",
+	  "title": "红小豆 450克",
+	  "sub_tit": "皮薄易煮，粒粒香甜",
+	  "num": "还剩674件",
+	  "limitP": "15",
+	  "price": "¥19"
+	 }
+	],
+	"recom1": [
+	{
+		"id": 37,
+		"img": "imgs/recbig1.png",
+		"title": " 冰激凌夏日女式墨镜",
+		"price": "¥229"
+	},
+	{
+		"id": 38,
+		"img": "imgs/rec11.png",
+		"title": " 冰激凌夏日女式墨镜",
+		"price": "¥229"
+	},
+	{
+		"id": 39,
+		"img": "imgs/rec22.png",
+		"title": " 马来西亚直采 椰子水 330毫升*12瓶",
+		"price": "¥98"
+	},
+	{
+		"id": 40,
+		"img": "imgs/rec33.png",
+		"title": " 冬夏两用 护脊椰棕弹簧床垫",
+		"price": "¥2099"
+	},
+	{
+		"id": 41,
+		"img": "imgs/rec44.png",
+		"title": " Paisley欧式天丝四件套",
+		"price": "¥599"
+	},
+	{
+		"id": 42,
+		"img": "imgs/rec55.png",
+		"title": " 男式户外轻薄皮肤衣",
+		"price": "¥239"
+	},
+	{
+		"id": 43,
+		"img": "imgs/rec66.png",
+		"title": " 小方盖系列 水性可撕指甲油",
+		"price": "¥14.9"
+	}
+],
+	"recom2": [
+	{
+		"id": 44,
+		"img": "imgs/recbig2.png",
+		"title": " 谷风一木 手帕纸",
+		"price": "¥5.9"
+	},
+	{
+		"id": 45,
+		"img": "imgs/rec2.png",
+		"title": " 网易智造智能陪伴机器猪（嘟嘟）",
+		"price": "¥199"
+	},
+	{
+		"id": 46,
+		"img": "imgs/rec21.png",
+		"title": " 女式咖啡碳+5℃升级保暖内衣",
+		"price": "¥169"
+	},
+	{
+		"id": 47,
+		"img": "imgs/rec3.png",
+		"title": " 谷风一木 软抽面巾纸",
+		"price": "¥16.9"
+	},
+	{
+		"id": 48,
+		"img": "imgs/rec4.png",
+		"title": " 懒人抹布",
+		"price": "¥13.99"
+	},
+	{
+		"id": 49,
+		"img": "imgs/rec5.png",
+		"title": " 日式和风声波式电动牙刷（可单买刷头）",
+		"price": "¥129"
+	},
+	{
+		"id": 50,
+		"img": "imgs/rec6.png",
+		"title": " 软弹速干男/女沐浴拖鞋",
+		"price": "¥24.9"
+	}
+],
+	"living": [
+  {
+    "id": 21,
+    "img": "imgs/living-pro1.png",
+    "title": " 天然宽篾头层青碳化竹凉席",
+    "price": "¥209.25",
+    "limit": "限时购"
+  },
+  {
+    "id": 22,
+    "img": "imgs/living-pro2.png",
+    "title": " 3件装 河马口收纳箱",
+    "price": "¥109.25"
+  },
+  {
+    "id": 23,
+    "img": "imgs/living-pro3.png",
+    "title": "多功能人体工学转椅",
+    "price": "¥109.25",
+    "hot": "爆品"
+  },
+  {
+    "id": 24,
+    "img": "imgs/living-pro4.jpg",
+    "title": " 宫廷奢华真丝四件套",
+    "price": "¥409.25"
+  }
+],
+	"newProduce": [
+ {
+  "id": 25,
+  "img": "imgs/det-big1.png",
+  "title": " 拼色锁扣马鞍包",
+  "price": "¥299",
+  "hoverImg": "imgs/det-big1.png"
+ },
+ {
+  "id": 26,
+  "img": "imgs/new2.png",
+  "title": " 女式尖头细带方根鞋",
+  "price": "¥299",
+  "hoverImg": "imgs/new2.png"
+ },
+ {
+  "id": 27,
+  "img": "imgs/new3.png",
+  "title": " 马来西亚直采 椰子水 330毫升*12瓶",
+  "price": "¥98",
+  "hoverImg": "imgs/new33.jpg"
+ },
+ {
+  "id": 28,
+  "img": "imgs/new4.jpg",
+  "title": " 冬夏两用 护脊椰棕弹簧床垫",
+  "price": "¥2099",
+  "hoverImg": "imgs/new44.jpg"
+ },
+ {
+  "id": 29,
+  "img": "imgs/new5.png",
+  "title": " 冰激凌夏日女式墨镜",
+  "price": "¥229",
+  "hoverImg": "imgs/new55.jpg"
+ },
+ {
+  "id": 30,
+  "img": "imgs/new6.png",
+  "title": " 女式尖头细带方根鞋",
+  "price": "¥299",
+  "hoverImg": "imgs/new66.png"
+ },
+ {
+  "id": 31,
+  "img": "imgs/new7.png",
+  "title": " 马来西亚直采 椰子水 330毫升*12瓶",
+  "price": "¥98",
+  "hoverImg": "imgs/new77.png"
+ },
+ {
+  "id": 32,
+  "img": "imgs/new8.png",
+  "title": " 冬夏两用 护脊椰棕弹簧床垫",
+  "price": "¥2099",
+  "hoverImg": "imgs/new88.png"
+ },
+ {
+  "id": 33,
+  "img": "imgs/new2.png",
+  "title": " 女式尖头细带方根鞋",
+  "price": "¥299",
+  "hoverImg": "imgs/new22.jpg"
+ },
+ {
+  "id": 34,
+  "img": "imgs/new3.png",
+  "title": " 马来西亚直采 椰子水 330毫升*12瓶",
+  "price": "¥98",
+  "hoverImg": "imgs/new33.jpg"
+ },
+ {
+  "id": 35,
+  "img": "imgs/new4.jpg",
+  "title": " 冬夏两用 护脊椰棕弹簧床垫",
+  "price": "¥2099",
+  "hoverImg": "imgs/new44.jpg"
+ },
+ {
+  "id": 36,
+  "img": "imgs/new5.png",
+  "title": " 冰激凌夏日女式墨镜",
+  "price": "¥229",
+  "hoverImg": "imgs/new55.jpg"
+ }
+]
+}
