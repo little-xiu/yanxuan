@@ -5,12 +5,16 @@ var cart = {
 	sort:null,
 	num:null,
 	data: null,
+	total: document.getElementById('total'),
+	realSum: document.getElementById('real-sum'),
+	freePostLink: document.getElementById('free-post-link'),
+	freePost: document.getElementById('free-post'),
 	cartMain: document.getElementById('cart-main'),
 	init: function() {
 		var _this = this;
 		this.dealSrc();
 		this.promise1 = new Promise(function(resolve,reject) {
-			//js中./代表上一级目录
+			//请求的资源路径以执行的文件为准,这里是html文件
 			ajax('get','./json/product.json',{},function(datas) {
 				var datas = JSON.parse(datas);
 				for(var key in datas) {
@@ -71,9 +75,9 @@ var cart = {
 										</div>
 										<div class="cart-col5">
 											<div class="cart-num-box">
-												<span class="reduce">-</span>
+												<span class="reduce" onselectstart="return false;" style="-moz-user-select:none;">-</span>
 												<input type="text" class="cart-ipt" value="${_this.num}">
-												<span class="add">+</span>
+												<span class="add" onselectstart="return false;" style="-moz-user-select:none;">+</span>
 											</div>
 										</div>
 										<div class="cart-col6">
@@ -86,7 +90,10 @@ var cart = {
 									</div> 
 								</div> `;
 			_this.cartMain.innerHTML = str;
+			_this.total.innerHTML = data.price.slice(1)*_this.num;
+			_this.realSum.innerHTML = data.price.slice(1)*_this.num;
 		})
 	}
 }
 cart.init();
+

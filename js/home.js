@@ -247,17 +247,18 @@ NewproList.prototype.promise = function() {
 		})
 	});
 }
+var baseUrl = "http://localhost/yanxuan1/details.html";
 NewproList.prototype.loadImg = function(data) {
 	var _this = this;
 	for(var i = 0; i < data.length; i++) {
 		this.str += '<li class="newcon-item">\
 									<div class="newcon-img">\
-										<a href="'+'http://localhost/work/wangyiyanxuan/details.html?id='+data[i].id+'&sort=newProduce'+'">\
+										<a href="'+ baseUrl +'?id='+data[i].id+'&sort=newProduce'+'">\
 											<img src="'+data[i].img+'" data-img="'+data[i].hoverImg+'" data-origin="'+data[i].img+'">\
 										</a>\
 									</div>\
 									<div class="newcon-txt">\
-										<a href="'+'http://localhost/work/wangyiyanxuan/details.html?id='+data[i].id+'&sort="newProduce"'+'">'+data[i].title+'</a>\
+										<a href="'+baseUrl +'?id='+data[i].id+'&sort="newProduce"'+'">'+data[i].title+'</a>\
 										<p class="price">'+data[i].price+'</p>\
 									</div>\
 								</li>'
@@ -342,13 +343,13 @@ Recom.prototype.init = function() {
 }
 Recom.prototype.appenditem1 = function() {
 	var lstr = '<div class="recom-top">\
-			 					<a href="'+'http://localhost/work/wangyiyanxuan/details.html?id='+this.data1[0].id+'&sort=recom1'+'">\
+			 					<a href="'+baseUrl +'?id='+this.data1[0].id+'&sort=recom1'+'">\
 			 						<img src="'+this.data1[0].img+'">\
 			 					</a>\
 			 				</div>\
 			 				<div class="recom-bottom">\
 			 					<span>限时购</span>\
-			 					<a href="'+'http://localhost/work/wangyiyanxuan/details.html?id='+this.data1[0].id+'&sort=recom1'+'">'+this.data1[0].title+'</a>\
+			 					<a href="'+baseUrl +'?id='+this.data1[0].id+'&sort=recom1'+'">'+this.data1[0].title+'</a>\
 			 					<p class="price">'+this.data1[0].price+'</p>\
 			 				</div>';
 	this.recoml1.innerHTML = lstr;
@@ -356,13 +357,13 @@ Recom.prototype.appenditem1 = function() {
 	for(var i = 1; i < 7; i++) {
 		str += '<li class="recom-sm">\
 		 						<div class="recom-sm-top">\
-		 							<a href="'+'http://localhost/work/wangyiyanxuan/details.html?id='+this.data1[i].id+'&sort=recom1'+'">\
+		 							<a href="'+baseUrl +'?id='+this.data1[i].id+'&sort=recom1'+'">\
 		 								<img src="'+this.data1[i].img+'">\
 		 							</a>\
 		 						</div>\
 		 						<div class="recom-sm-bot">\
 		 							<span>限时购</span>\
-		 							<a href="'+'http://localhost/work/wangyiyanxuan/details.html?id='+this.data1[i].id+'&sort=recom1'+'">'+this.data1[i].title+'</a>\
+		 							<a href="'+baseUrl +'?id='+this.data1[i].id+'&sort=recom1'+'">'+this.data1[i].title+'</a>\
 		 							<p class="price">'+this.data1[i].price+'</p>\
 		 						</div>\
 		 					</li>';
@@ -427,13 +428,13 @@ Limite.prototype.init = function() {
 		for(var i = 0; i < data.length; i++) {
 			str += `<div class="limit-item">
 						<div class="limit-img-box">
-							<a href="http://localhost/work/wangyiyanxuan/details.html?id=${data[i].id}&sort=limit">
+							<a href="${baseUrl}?id=${data[i].id}&sort=limit">
 								<img src="${data[i].img}">
 							</a>
 						</div>
 						<div class="limit-txt">
 							<h3 class="limit-tit">
-								<a href="http://localhost/work/wangyiyanxuan/details.html?id=${data[i].id}&sort=limit">${data[i].title}</a>
+								<a href="${baseUrl}?id=${data[i].id}&sort=limit">${data[i].title}</a>
 							</h3>
 							<p class="limit-des">${data[i].sub_tit}</p>
 							<div class="progress-box">
@@ -453,7 +454,7 @@ Limite.prototype.init = function() {
 									<span class="origin-price">${data[i].originP}</span>
 								</span>
 							</p>
-							<a class="buy-btn" href="http://localhost/work/wangyiyanxuan/details.html?id=${data[i].id}&sort=limit">立即购买</a>
+							<a class="buy-btn" href="${baseUrl}?id=${data[i].id}&sort=limit">立即购买</a>
 						</div>
 					</div>`;
 		}

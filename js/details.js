@@ -102,9 +102,9 @@ Show.prototype.showData = function() {
 							<div class="de-num-box clearfix">
 								<span class="de-num-txt">数量</span>
 								<span class="de-num-inner">
-									<span class="reduce">-</span>
+									<span class="reduce" onselectstart="return false;" style="-moz-user-select:none;">-</span>
 									<input type="text" id="de-numIpt" value="1">
-									<span class="add">+</span>
+									<span class="add" onselectstart="return false;" style="-moz-user-select:none;">+</span>
 								</span>
 							</div>
 							<div class="de-btns">
@@ -153,11 +153,12 @@ Show.prototype.numChange = function() {
 		_this.numIpt.value = _this.numIpt.value == 1 ? 1 : --_this.numIpt.value;		
 	}
 }
+var baseUrl = "http://localhost/yanxuan1/cart.html";
 Show.prototype.addCart = function() {
 	var _this = this;
 	var addBtn = document.querySelector('.add-cart');
 	addBtn.onclick = function() {
-		location.href = "http://localhost/work/wangyiyanxuan/cart.html?id=" + _this.id + "&num=" + _this.numIpt.value + "&sort=" + _this.sort;
+		location.href = baseUrl +"?id=" + _this.id + "&num=" + _this.numIpt.value + "&sort=" + _this.sort;
 	}
 }
 new Show();
