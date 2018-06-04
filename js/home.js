@@ -247,7 +247,8 @@ NewproList.prototype.promise = function() {
 		})
 	});
 }
-var baseUrl = "http://localhost/yanxuan1/details.html";
+// var baseUrl = "http://localhost/yanxuan1/details.html";
+var baseUrl = "http://localhost/work/wangyiyanxuan/details.html";
 NewproList.prototype.loadImg = function(data) {
 	var _this = this;
 	for(var i = 0; i < data.length; i++) {

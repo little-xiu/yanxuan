@@ -2060,7 +2060,7 @@ html,body {
 	height: 18px;
 	margin-left: 20px;
 	margin-right: 14px;
-	-webkit-appearance: none;
+	/*-webkit-appearance: none;*/
 	border: none;	
 	cursor: pointer;
 }
@@ -2184,6 +2184,7 @@ html,body {
 }
 .cart-col7 a {
 	padding-top: 8px;
+	cursor: pointer;
 }
 .cart-col7 a:hover {
 	color: #b4a078;

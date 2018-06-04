@@ -153,7 +153,7 @@ Show.prototype.numChange = function() {
 		_this.numIpt.value = _this.numIpt.value == 1 ? 1 : --_this.numIpt.value;		
 	}
 }
-var baseUrl = "http://localhost/yanxuan1/cart.html";
+var baseUrl = "http://localhost/work/wangyiyanxuan/cart.html";
 Show.prototype.addCart = function() {
 	var _this = this;
 	var addBtn = document.querySelector('.add-cart');
